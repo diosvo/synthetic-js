@@ -26,12 +26,7 @@ class NullUser {
 
 function getUser(id) {
   const user = users.find((user) => user.id === id);
-
-  if (user == null) {
-    return new NullUser();
-  } else {
-    return user;
-  }
+  return user == null ? new NullUser() : user;
 }
 
 function print(id) {
