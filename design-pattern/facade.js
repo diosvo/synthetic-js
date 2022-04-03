@@ -1,27 +1,33 @@
+import axios from "axios";
+
 /*
  * use-case: Doing fetch requests
- * 🔥 Pros: 🔥
+ * 🔥 Pros:
+ * - it is a wrapper class used to hide the implementation details
  */
 
-/*  Case 1: fetch requests from jsonplaceholder.com */
+/* >>>  Case 1: fetch requests from jsonplaceholder.com <<< */
 
 function getUsers() {
-  return getFetch("https://jsonplaceholder.typicode.com/users");
+  return getFetchAxios("https://jsonplaceholder.typicode.com/users");
 }
 
 function getUserPosts(userId) {
-  return getFetch("https://jsonplaceholder.typicode.com/posts", { userId });
+  return getFetchAxios("https://jsonplaceholder.typicode.com/posts", {
+    userId,
+  });
 }
 
 getUsers().then((users) => {
-  users.forEach((user) => {
+  users.forEach((user) =>
     getUserPosts(user.id).then((posts) =>
-      console.table({ name: user.name, posts: posts.length })
-    );
-  });
+      console.log(`${user.name} - ${posts.length}`)
+    )
+  );
 });
 
 // Without axios
+
 function getFetch(url, params = {}) {
   const query = Object.entries(params)
     .map((params) => `${params[0]}=${params[1]}`)
@@ -31,4 +37,15 @@ function getFetch(url, params = {}) {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   }).then((response) => response.json());
+}
+
+// With axios
+
+function getFetchAxios(url, params = {}) {
+  return axios({
+    url,
+    method: "GET",
+    params,
+    crossDomain: true,
+  }).then((response) => response.data);
 }
