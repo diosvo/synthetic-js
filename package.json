@@ -1,0 +1,28 @@
+{
+  "name": "synthetic",
+  "version": "1.0.0",
+  "description": "Design Pattern",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diosvo/synthetic-js.git"
+  },
+  "keywords": [],
+  "author": "diosvo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diosvo/synthetic-js/issues"
+  },
+  "homepage": "https://github.com/diosvo/synthetic-js#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1",
+    "process": "^0.11.10"
+  }
+}
