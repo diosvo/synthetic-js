@@ -1,4 +1,6 @@
 import axios from "axios";
+const WEATHER_API_KEY = "75d0116a26d6c8be66e9d67612354e27";
+const IP_INFO_API_KEY = "adec6251a9f09e";
 
 /*
  * use-case: Doing fetch requests
@@ -6,7 +8,7 @@ import axios from "axios";
  * - it is a wrapper class used to hide the implementation details
  */
 
-/* >>>  Case 1: fetch requests from jsonplaceholder.com <<< */
+/* >>>  Case 1: fetch requests from jsonplaceholder.com - Promise <<< */
 
 function getUsers() {
   return getFetchAxios("https://jsonplaceholder.typicode.com/users");
@@ -49,3 +51,35 @@ function getFetchAxios(url, params = {}) {
     crossDomain: true,
   }).then((response) => response.data);
 }
+
+/* >>>  Case 2: fetch requests from Open Weather API - async/ await <<< */
+
+async function fetchWeather(city) {
+  const endpoint = "https://api.openweathermap.org/data/2.5/weather";
+  const query = `q=${city}&appid=${WEATHER_API_KEY}`;
+  const response = await fetch(`${endpoint}?${query}`);
+
+  if (!response.ok) {
+    throw new Error(`${response.statusText} (${response.status})`);
+  }
+  return response.json();
+}
+
+async function fetchIpInfo() {
+  const endpoint = "https://ipinfo.io";
+  const query = `token=${IP_INFO_API_KEY}`;
+  const response = await fetch(`${endpoint}?${query}`);
+
+  if (!response.ok) {
+    throw new Error(`${response.statusText} (${response.status})`);
+  }
+  return response.json();
+}
+
+async function init() {
+  const { city, country } = await fetchIpInfo();
+  const weatherData = await fetchWeather(`${city}, ${country}`);
+  console.log(weatherData);
+}
+
+init();
