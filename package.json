@@ -22,6 +22,7 @@
     "axios": "^0.26.1"
   },
   "devDependencies": {
+    "http-proxy-middleware": "^2.0.4",
     "parcel": "^2.4.1",
     "process": "^0.11.10"
   }
