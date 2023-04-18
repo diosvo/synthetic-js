@@ -2,8 +2,8 @@
   "name": "synthetic",
   "version": "1.0.0",
   "description": "Design Pattern",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },

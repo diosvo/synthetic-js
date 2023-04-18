@@ -1,6 +1,3 @@
-const WEATHER_API_KEY = "75d0116a26d6c8be66e9d67612354e27";
-const IP_INFO_API_KEY = "adec6251a9f09e";
-
 const fromCache = (key, cacheInMinutes) => {
   const cacheInMilliseconds = cacheInMinutes * 60 * 1000;
   if (localStorage[key] !== undefined) {
@@ -13,8 +10,7 @@ const fromCache = (key, cacheInMinutes) => {
   return false;
 };
 
-const fetchData =
-  ({ endpoint, cacheInMinutes }) =>
+const fetchData = ({ endpoint, cacheInMinutes }) =>
   async (query) => {
     const url = `${endpoint}?${query}`;
     const cache = fromCache(url, cacheInMinutes);
@@ -43,10 +39,8 @@ async function init() {
     cacheInMinutes: 10,
   });
 
-  const { city, country } = await fetchIpInfo(`token=${IP_INFO_API_KEY}`);
-  const weatherData = await fetchWeather(
-    `q=${city}, ${country}&appid=${WEATHER_API_KEY}`
-  );
+  const { city, country } = await fetchIpInfo(`token=${process.env.IP_INFO_API_KEY}`);
+  const weatherData = await fetchWeather(`q=${city}, ${country}&appid=${process.env.WEATHER_API_KEY}`);
 
   console.log(weatherData);
 }

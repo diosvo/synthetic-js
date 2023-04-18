@@ -34,7 +34,7 @@ function print(id) {
 
   console.log(
     `Hello ${user.name}.
-     ${user.hasAccess() ? "You have access" : "You dont have access."}`
+     ${user.hasAccess() ? "You have access" : "You don\'t have access."}`
   );
 }
 
