@@ -32,4 +32,3 @@ function SecondDemo() {
 console.table(FirstDemo());
 console.table(SecondDemo());
 
-// export default logger;

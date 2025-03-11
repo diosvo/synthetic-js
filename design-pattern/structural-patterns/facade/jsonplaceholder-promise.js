@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 /*
  * use-case: Doing fetch requests
@@ -7,11 +7,11 @@ import axios from "axios";
  */
 
 function getUsers() {
-  return getFetchAxios("https://jsonplaceholder.typicode.com/users");
+  return getFetchAxios('https://jsonplaceholder.typicode.com/users');
 }
 
 function getUserPosts(userId) {
-  return getFetchAxios("https://jsonplaceholder.typicode.com/posts", {
+  return getFetchAxios('https://jsonplaceholder.typicode.com/posts', {
     userId,
   });
 }
@@ -29,11 +29,11 @@ getUsers().then((users) => {
 function getFetch(url, params = {}) {
   const query = Object.entries(params)
     .map((params) => `${params[0]}=${params[1]}`)
-    .join("&");
+    .join('&');
 
   return fetch(`${url}?${query}`, {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
   }).then((response) => response.json());
 }
 
@@ -42,7 +42,7 @@ function getFetch(url, params = {}) {
 function getFetchAxios(url, params = {}) {
   return axios({
     url,
-    method: "GET",
+    method: 'GET',
     params,
     crossDomain: true,
   }).then((response) => response.data);

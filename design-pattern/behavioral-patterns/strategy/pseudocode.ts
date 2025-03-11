@@ -53,18 +53,21 @@ class Context {
   }
 }
 
-// The client code picks a concrete strategy and passes it to the context. 
+// The client code picks a concrete strategy and passes it to the context.
 // The client should be aware of the differences between strategies in order to make the right choice.
 
 class ExampleApplication {
-
-  main(action: 'addition' | 'subtraction' | 'multiplication', first: number, second: number): number {
+  main(
+    action: 'addition' | 'subtraction' | 'multiplication',
+    first: number,
+    second: number
+  ): number {
     const context = new Context();
     const mapper = {
       addition: context.setStrategy(new ConcreteStrategyAdd()),
       subtraction: context.setStrategy(new ConcreteStrategySubtract()),
       multiplication: context.setStrategy(new ConcreteStrategyMultiply()),
-    }
+    };
 
     mapper[action];
     return context.executeStrategy(first, second);

@@ -5,18 +5,18 @@ class User {
   }
 
   hasAccess() {
-    return this.name === "Dios";
+    return this.name === 'Dios';
   }
 }
 
-const users = [new User(1, "Dios"), new User(2, "Alex")];
+const users = [new User(1, 'Dios'), new User(2, 'Alex')];
 
 class NullUser {
   // create default values for falsy cases
 
   constructor() {
     this.id = -1;
-    this.name = "Guest";
+    this.name = 'Guest';
   }
 
   hasAccess() {
@@ -34,7 +34,7 @@ function print(id) {
 
   console.log(
     `Hello ${user.name}.
-     ${user.hasAccess() ? "You have access" : "You don\'t have access."}`
+     ${user.hasAccess() ? 'You have access' : "You don't have access."}`
   );
 }
 

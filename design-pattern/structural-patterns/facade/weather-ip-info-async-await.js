@@ -10,7 +10,8 @@ const fromCache = (key, cacheInMinutes) => {
   return false;
 };
 
-const fetchData = ({ endpoint, cacheInMinutes }) =>
+const fetchData =
+  ({ endpoint, cacheInMinutes }) =>
   async (query) => {
     const url = `${endpoint}?${query}`;
     const cache = fromCache(url, cacheInMinutes);
@@ -31,16 +32,20 @@ const fetchData = ({ endpoint, cacheInMinutes }) =>
 
 async function init() {
   const fetchIpInfo = fetchData({
-    endpoint: "https://ipinfo.io",
+    endpoint: 'https://ipinfo.io',
     cacheInMinutes: 30,
   });
   const fetchWeather = fetchData({
-    endpoint: "https://api.openweathermap.org/data/2.5/weather",
+    endpoint: 'https://api.openweathermap.org/data/2.5/weather',
     cacheInMinutes: 10,
   });
 
-  const { city, country } = await fetchIpInfo(`token=${process.env.IP_INFO_API_KEY}`);
-  const weatherData = await fetchWeather(`q=${city}, ${country}&appid=${process.env.WEATHER_API_KEY}`);
+  const { city, country } = await fetchIpInfo(
+    `token=${process.env.IP_INFO_API_KEY}`
+  );
+  const weatherData = await fetchWeather(
+    `q=${city}, ${country}&appid=${process.env.WEATHER_API_KEY}`
+  );
 
   console.log(weatherData);
 }
