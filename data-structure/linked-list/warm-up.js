@@ -14,10 +14,10 @@ a.next = b;
 b.next = c;
 c.next = d;
 
-///   A -> B -> C -> D -> NULL
-///   head
+/// A -> B -> C -> D -> NULL
+/// head           tail
 
-// 🔁 While loop first
+// 🔁 While loop
 
 // const linkedList = (head) => {
 //   let current = head;
@@ -36,4 +36,4 @@ const linkedList = (head) => {
   linkedList(head.next);
 };
 
-linkedList(a);
+linkedList(a); // -> 'A', 'B', 'C', 'D'
