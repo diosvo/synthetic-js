@@ -1,15 +1,13 @@
-// n = input number
-
-// ⏱️ Time: O(n)
-// 🚀 Space: O(n)
-
-/**
- * @param {number} n input number
- * @returns {array} Returns an array containing numbers from 1 to `n`, replacing certain numbers according to the following rules:
-
-- if the number is divisible by 3, make the element "fizz"
-- if the number is divisible by 5, make the element "buzz"
-- if the number is divisible by 3 and 5, make the element "fizzbuzz"
+/** 🔁 Iterative
+ * Generates array 1 to n with replacements:
+ * - "fizz" for multiples of 3
+ * - "buzz" for multiples of 5
+ * - "fizzbuzz" for multiples of both 3 and 5
+ *
+ * n = input number
+ *
+ * ⏱️ Time: O(n) - 🚀 Space: O(n)
+ * (Space for storing the result array)
  */
 const fizzBuzz = (n) => {
   // if else 3 & 5 = 15 -> 3 -> 5

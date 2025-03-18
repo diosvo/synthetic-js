@@ -17,8 +17,13 @@ c.next = d;
 /// A -> B -> C -> D -> NULL
 /// head           tail
 
-// 🔁 While loop
-
+/** 🔁 Iterative
+ * Traverse through each node of the linked list
+ *
+ * n = number of nodes
+ *
+ * ⏱️ Time: O(n) - 🚀 Space: O(1)
+ */
 // const linkedList = (head) => {
 //   let current = head;
 
@@ -28,8 +33,14 @@ c.next = d;
 //   }
 // };
 
-/// 🔄 Recursion
-
+/** 🔄 Recursive
+ * Recursively process each node, moving to the next node
+ *
+ * n = number of nodes
+ *
+ * ⏱️ Time: O(n) - 🚀 Space: O(n)
+ * (Space complexity due to call stack)
+ */
 const linkedList = (head) => {
   if (head === null) return;
   console.log(head.value);

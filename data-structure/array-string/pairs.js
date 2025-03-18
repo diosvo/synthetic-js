@@ -1,11 +1,10 @@
-// n = length of array
-
-// ⏱️ Time: O(n^2)
-// 🚀 Space: O(n^2)
-
-/**
- * @param {number} elements An array
- * @returns {array} Returns an array contain all unique pairs of elements.
+/** 🔁 Iterative
+ * Creates all possible unique pairs of elements from the array
+ *
+ * n = length of array
+ *
+ * ⏱️ Time: O(n²) - 🚀 Space: O(n²)
+ * (Creates n(n-1)/2 pairs in worst case)
  */
 const pairs = (elements) => {
   const result = [];

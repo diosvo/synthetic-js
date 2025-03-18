@@ -1,11 +1,10 @@
-// n = array numbers
-
-// ⏱️ Time: O(n^2)
-// 🚀 Space: O(n^2)
-
-/**
- * @param {Array} numbers A number.
- * @returns {number} Returns true if number is a prime (only divisible by two distinct numbers 1 and itself). Otherwise, returns false.
+/** 🔄 Recursive
+ * Recursively adds first element to sum of remaining elements
+ *
+ * n = # of elements
+ *
+ * ⏱️ Time: O(n²) - 🚀 Space: O(n²)
+ * (Quadratic due to array slicing operation in each recursive call)
  */
 const sumRecursive = (numbers) => {
   if (numbers.length === 0) return 0;
@@ -13,6 +12,13 @@ const sumRecursive = (numbers) => {
   return numbers[0] + sumRecursive(numbers.slice(1));
 };
 
+/** 🔁 Iterative
+ * Adds each element in a loop
+ *
+ * n = # of elements
+ *
+ * ⏱️ Time: O(n) - 🚀 Space: O(1)
+ */
 const sum = (numbers) => {
   let result = 0;
 

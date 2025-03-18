@@ -1,11 +1,9 @@
-// n = length of array
-
-// ⏱️ Time: O(n)
-// 🚀 Space: O(1)
-
-/**
- * @param {array} nums Array of numbers
- * @returns {number} Returns the largest number in the array.
+/** 🔁 Iterative
+ * Iterates through array once to find the largest number
+ *
+ * n = length of array
+ *
+ * ⏱️ Time: O(n) - 🚀 Space: O(1)
  */
 const maxValue = (nums) => {
   let max = -Infinity;

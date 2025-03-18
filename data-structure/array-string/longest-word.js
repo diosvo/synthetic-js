@@ -1,11 +1,11 @@
-// n = length of sentence
-
-// ⏱️ Time: O(n)
-// 🚀 Space: O(n)
-
-/**
- * @param {string} sentence A sentence string
- * @returns {string} Returns the longest word (tie -> later) in the sentence
+/** 🔁 Iterative
+ * Splits sentence and compares each word's length to find the longest
+ * In case of tie, returns the word that appears later
+ *
+ * n = length of sentence
+ *
+ * ⏱️ Time: O(n) - 🚀 Space: O(n)
+ * (Space needed for storing the split words)
  */
 const longestWord = (sentence) => {
   let word = '';

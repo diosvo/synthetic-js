@@ -1,11 +1,10 @@
-// n = input number
-
-// ⏱️ Time: O(sqrt(n))
-// 🚀 Space: O(1)
-
-/**
- * @param {number} n A number.
- * @returns {boolean} Returns true if number is a prime (only divisible by two distinct numbers 1 and itself). Otherwise, returns false.
+/** 🔁 Iterative
+ * Tests if a number is prime by checking divisibility up to square root
+ * A prime number is only divisible by 1 and itself
+ *
+ * n = input number
+ *
+ * ⏱️ Time: O(sqrt(n)) - 🚀 Space: O(1)
  */
 const isPrime = (n) => {
   if (n < 2) return false;

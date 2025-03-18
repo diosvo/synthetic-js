@@ -16,7 +16,7 @@
 //   return null;
 // };
 
-/** 🔄 Recursion
+/** 🔄 Recursive
  * Set the passed index to the head node and decrement it until the index reaches 0.
  *
  * n = # of nodes
