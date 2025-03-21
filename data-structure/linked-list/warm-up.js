@@ -46,5 +46,3 @@ const linkedList = (head) => {
   console.log(head.value);
   linkedList(head.next);
 };
-
-linkedList(a); // -> 'A', 'B', 'C', 'D'
