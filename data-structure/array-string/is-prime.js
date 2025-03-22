@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * Tests if a number is prime by checking divisibility up to square root
  * A prime number is only divisible by 1 and itself
  *
@@ -15,3 +16,6 @@ const isPrime = (n) => {
 
   return true;
 };
+
+isPrime(7); // -> true
+isPrime(10); // -> false

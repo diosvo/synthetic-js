@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * Generates array 1 to n with replacements:
  * - "fizz" for multiples of 3
  * - "buzz" for multiples of 5
@@ -27,3 +28,5 @@ const fizzBuzz = (n) => {
 
   return result;
 };
+
+fizzBuzz(5); // -> [1, 2, 'fizz', 4, 'buzz']

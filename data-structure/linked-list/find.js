@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * Search for target value by iterating through each node
  *
  * n = number of nodes
@@ -15,6 +16,7 @@
 // };
 
 /** 🔄 Recursive
+ *
  * Search for target value by recursively checking each node
  *
  * n = number of nodes

@@ -1,4 +1,5 @@
 /** 🔄 Recursive
+ *
  * Recursively adds first element to sum of remaining elements
  *
  * n = # of elements
@@ -12,7 +13,10 @@ const sumRecursive = (numbers) => {
   return numbers[0] + sumRecursive(numbers.slice(1));
 };
 
+sumRecursive([1, 2, 3, 4, 5]); // -> 15
+
 /** 🔁 Iterative
+ *
  * Adds each element in a loop
  *
  * n = # of elements

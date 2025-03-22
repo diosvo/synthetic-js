@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * Splits sentence and compares each word's length to find the longest
  * In case of tie, returns the word that appears later
  *
@@ -16,3 +17,5 @@ const longestWord = (sentence) => {
 
   return word;
 };
+
+longestWord('The quick brown fox'); // -> 'quick'

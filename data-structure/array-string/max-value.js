@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * Iterates through array once to find the largest number
  *
  * n = length of array
@@ -14,3 +15,5 @@ const maxValue = (nums) => {
 
   return max;
 };
+
+maxValue([1, 2, 3, 4, 5]); // -> 5

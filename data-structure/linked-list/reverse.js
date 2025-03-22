@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * Reverses the singly linked list
  *
  * head = head of the linked list
@@ -19,6 +20,8 @@ const reverseList = (head) => {
 
   return prev;
 };
+
+reverseList(a); // -> D -> C -> B -> A
 
 // Original: A -> B -> C
 // 🔆 Idea: set the narrow to point to NULL (the current.next represent as narrow)

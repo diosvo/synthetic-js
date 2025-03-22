@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * Creates all possible unique pairs of elements from the array
  *
  * n = length of array
@@ -18,3 +19,5 @@ const pairs = (elements) => {
 
   return result;
 };
+
+pairs([1, 2, 3]); // -> [[1, 2], [1, 3], [2, 3]]

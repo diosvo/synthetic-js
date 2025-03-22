@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * Add up values by iterating through each node
  *
  * n = number of nodes
@@ -18,6 +19,7 @@
 // };
 
 /** 🔄 Recursive
+ *
  * Add current node value to sum of remaining nodes recursively
  *
  * n = number of nodes

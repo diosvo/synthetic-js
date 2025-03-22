@@ -1,4 +1,5 @@
 /** 🔁 Iterative
+ *
  * n = # of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
@@ -17,6 +18,7 @@
 // };
 
 /** 🔄 Recursive
+ *
  * Set the passed index to the head node and decrement it until the index reaches 0.
  *
  * n = # of nodes
@@ -29,3 +31,5 @@ const getNodeValue = (head, index) => {
 
   return getNodeValue(head.next, index - 1);
 };
+
+getNodeValue(a, 2); // -> 'C'
