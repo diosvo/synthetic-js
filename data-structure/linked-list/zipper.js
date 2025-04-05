@@ -1,4 +1,4 @@
-/**
+/** 💡
  * 1. Start with a counter = 0 to track alternating selections
  * 2. Use 'tail' to track the growing combined list
  * 3. At each step:
@@ -46,13 +46,13 @@
 // };
 
 /** 🔄 Recursive
- * Zip 2 list nodes together
  *
- * n = number of list 1
- *
- * m = number of list 2
+ * - n = number of list 1
+ * - m = number of list 2
  *
  * ⏱️ Time: O(min(n, m)) - 🚀 Space: O(min(n, m))
+ *
+ * @return {ListNode} A zipped list
  */
 const zipperLists = (head1, head2) => {
   if (head1 === null) return head2;
