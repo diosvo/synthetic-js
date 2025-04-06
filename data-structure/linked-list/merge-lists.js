@@ -1,4 +1,4 @@
-/** 💡
+/** 🔆 Idea
  * 1. Select the smaller value from both lists.
  * 2. Create a dummy node, compare the two nodes.
  * 3. Insert the smaller value into the sorted linked list.
@@ -28,7 +28,7 @@ const mergeLists = (head1, head2) => {
 
 /** 🔁 Iterative
  *
- * Merge the two lists together into **single sorted** linked list.
+ * @description Merge the two lists together into **single sorted** linked list.
  *
  * Do this in-place, by mutating the original Nodes.
  *

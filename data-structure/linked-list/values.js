@@ -1,8 +1,8 @@
 /** 🔁 Iterative
  *
- * Collect all node values in an array through iteration
+ * @description Collect all node values in an array through iteration
  *
- * n = number of nodes
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  */

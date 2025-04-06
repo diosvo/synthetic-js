@@ -1,4 +1,4 @@
-/** 💡
+/** 🔆 Idea
  * 1. Track 3 variables: max_streak, current_streak, and prev_value.
  * 2. Compare:
  *  - current = prev_value -> current_streak++
@@ -8,7 +8,8 @@
  */
 
 /** 🔁 Iterative
- * - n = # of list
+ *
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  *

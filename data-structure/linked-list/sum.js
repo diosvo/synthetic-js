@@ -1,8 +1,8 @@
 /** 🔁 Iterative
  *
- * Add up values by iterating through each node
+ * @description Add up values by iterating through each node
  *
- * n = number of nodes
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  */
@@ -20,9 +20,9 @@
 
 /** 🔄 Recursive
  *
- * Add current node value to sum of remaining nodes recursively
+ * @description Add up values by iterating through each node
  *
- * n = number of nodes
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  * (Space complexity due to call stack)

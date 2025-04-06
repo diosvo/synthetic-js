@@ -1,8 +1,8 @@
 /** 🔁 Iterative
  *
- * Search for target value by iterating through each node
+ * @description Search for target value by iterating through each node
  *
- * n = number of nodes
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  */
@@ -17,9 +17,9 @@
 
 /** 🔄 Recursive
  *
- * Search for target value by recursively checking each node
+ * @description Search for target value by recursively checking each node
  *
- * n = number of nodes
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  * (Space complexity due to call stack)

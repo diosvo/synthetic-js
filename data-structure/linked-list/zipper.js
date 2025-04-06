@@ -1,4 +1,4 @@
-/** 💡
+/** 🔆 Idea
  * 1. Start with a counter = 0 to track alternating selections
  * 2. Use 'tail' to track the growing combined list
  * 3. At each step:
@@ -13,7 +13,8 @@
  */
 
 /** 🔁 Iterative
- * Zip 2 list nodes together
+ *
+ * @description Zip 2 list nodes together
  *
  * n = number of list 1
  *

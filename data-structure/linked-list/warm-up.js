@@ -1,7 +1,8 @@
 /** 🔁 Iterative
- * Traverse through each node of the linked list
  *
- * n = number of nodes
+ * @description Traverse through each node of the linked list
+ *
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  */
@@ -16,9 +17,9 @@
 
 /** 🔄 Recursive
  *
- * Recursively process each node, moving to the next node
+ * @description Recursively process each node, moving to the next node
  *
- * n = number of nodes
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  * (Space complexity due to call stack)

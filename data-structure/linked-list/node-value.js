@@ -1,6 +1,6 @@
 /** 🔁 Iterative
  *
- * n = # of nodes
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  */
@@ -19,9 +19,9 @@
 
 /** 🔄 Recursive
  *
- * Set the passed index to the head node and decrement it until the index reaches 0.
+ * @description Set the passed index to the head node and decrement it until the index reaches 0.
  *
- * n = # of nodes
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  */

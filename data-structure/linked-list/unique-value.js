@@ -1,4 +1,4 @@
-/** 💡
+/** 🔆 Idea
  * 1. Create a current node at the head of the list.
  * 2. If head.val != current.val -> returns false.
  * 3. If finish traversing (current == null) -> returns true
@@ -6,7 +6,7 @@
 
 /** 🔄 Recursive
  *
- * - n = # of list
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
@@ -25,7 +25,7 @@ const isUnivalueList = (head, prevVal = null) => {
 
 /** 🔁 Iterative
  *
- * - n = # of list
+ * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  *

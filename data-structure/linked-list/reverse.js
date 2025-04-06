@@ -1,12 +1,11 @@
-/** 🔁 Iterative
+/** 🔄 Recursive
  *
- * Reverses the singly linked list
+ * @description Reverses the singly linked list
  *
- * head = head of the linked list
+ * - n = # of list
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  */
-
 const reverseList = (head) => {
   let prev = null; // A become to be tail
   let current = head;
