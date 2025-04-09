@@ -1,6 +1,12 @@
-# Key Concept
+# 🧩 Key concept
 
-- Hashing in JS means using an object to break down items.
+- A plain old JS can be used as a hash map.
+
+- `Map` stores key-value pairs / `Set` only store keys.
+
+- `Set` advantages:
+  - Elements are unique and unordered.
+  - Time complexity: O(1)
 
 # 🎯 Common Strategies
 
