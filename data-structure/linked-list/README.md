@@ -11,7 +11,7 @@
 
 ❓ Why might the expression `current.next.value` be unsafe
 
-If current is the tail node -> `current.next` is null and does not have `value` property
+If current is the tail node → `current.next` is null and does not have `value` property
 
 ❓ The optimal complexity we can achieve for searching for a target value in a standard, singly linked-list:
 
