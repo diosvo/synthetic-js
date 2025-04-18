@@ -33,18 +33,22 @@ if (root === null) return [];
 const result = [];
 
 // [1] Initialize a queue with root node.
-const stack = [root];
+const queue = [root];
 
-while (stack.length > 0) {
+while (queue.length > 0) {
   // [2] Track the current value with the first node.
-  const node = stack.shift();
+  const node = queue.shift();
 
   <DO_SOMETHING>
 
   // [3] Push nodes from the left to right
-  if (node.left) stack.push(node.left);
-  if (node.right) stack.push(node.right);
+  if (node.left) queue.push(node.left);
+  if (node.right) queue.push(node.right);
 }
 
 return <EXPECTED>;
 ```
+
+### 📍 NOTEs
+
+- The solution should really be considered O(n^2) runtime if we use JS `shift()` methods runs in O(n).

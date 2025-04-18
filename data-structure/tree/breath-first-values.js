@@ -14,16 +14,16 @@ const breathFirstValues = (root) => {
   const result = [];
 
   // 1. Initialize a queue with root node.
-  const stack = [root];
+  const queue = [root];
 
-  while (stack.length > 0) {
+  while (queue.length > 0) {
     // 2. Track the current value with the first node.
-    const node = stack.shift();
+    const node = queue.shift();
     result.push(node.val);
 
     // 3. Push nodes from the left to right
-    if (node.left) stack.push(node.left);
-    if (node.right) stack.push(node.right);
+    if (node.left) queue.push(node.left);
+    if (node.right) queue.push(node.right);
   }
 
   return result;
