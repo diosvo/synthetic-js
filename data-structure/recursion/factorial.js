@@ -1,7 +1,5 @@
 /** 🔄 Recursive
  *
- * n = # of elements
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  */
 const factorial = (n) => {

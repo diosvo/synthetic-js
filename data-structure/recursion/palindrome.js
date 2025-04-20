@@ -1,7 +1,6 @@
 /** 🔄 Recursive
  *
- * Whether or not the string is the same forwards and backwards.
- * n = string length
+ * @description Whether or not the string is the same forwards and backwards.
  *
  * ⏱️ Time: O(n²) - 🚀 Space: O(n²)
  */
@@ -12,7 +11,7 @@ const palindrome = (s) => {
   return palindrome(s.slice(1, -1));
 };
 
-palindrome('racecar');  // -> true
-palindrome('hello');    // -> false
-palindrome('');         // -> true
-palindrome('a');        // -> true
+palindrome('racecar'); // -> true
+palindrome('hello'); // -> false
+palindrome(''); // -> true
+palindrome('a'); // -> true

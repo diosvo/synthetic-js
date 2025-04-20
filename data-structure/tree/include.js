@@ -1,7 +1,5 @@
 /** 🔄 Recursive
  *
- * - n = number of nodes
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
  * @returns {boolean} Indicate whether or not the value is contained in the tree
@@ -17,8 +15,6 @@ treeIncludes(a, 'A'); // -> true
 treeIncludes(a, 'Z'); // -> false
 
 /** 🔁 Iterative
- *
- * - n = number of nodes
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *

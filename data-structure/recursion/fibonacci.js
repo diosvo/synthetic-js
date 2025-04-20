@@ -1,8 +1,6 @@
 /** 🔄 Recursive
  *
- * Fibonacci sequence using recursion
- *
- * n = string length
+ * @description Fibonacci sequence using recursion
  *
  * ⏱️ Time: O(2^n) - 🚀 Space: O(n)
  */

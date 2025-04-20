@@ -1,9 +1,5 @@
 /** 🔄 Recursive
  *
- * Reverse a string using recursion
- *
- * s = a string
- *
  * ⏱️ Time: O(n²) - 🚀 Space: O(n²)
  */
 const reverseString = (s) => {

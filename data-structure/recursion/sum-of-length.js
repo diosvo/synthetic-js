@@ -1,8 +1,6 @@
 /** 🔄 Recursive
  *
- * Calculate the sum of the lengths of all strings in an array
- *
- * strings = array length
+ * @description Calculate the sum of the lengths of all strings in an array
  *
  * ⏱️ Time: O(n²) - 🚀 Space: O(n²)
  */

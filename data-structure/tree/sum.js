@@ -1,3 +1,9 @@
+/** 🔄 Recursive
+ *
+ * ⏱️ Time: O(n) - 🚀 Space: O(n)
+ *
+ * @returns {boolean} Indicate whether or not the value is contained in the tree
+ */
 const treeSum = (root) => {
   if (root === null) return 0;
 
@@ -5,5 +11,3 @@ const treeSum = (root) => {
 };
 
 treeSum(g); // -> 21
-
-// 🔆 Use depth or breadth-first search to solve this problem, initialising total sum to 0.

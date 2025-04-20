@@ -2,8 +2,6 @@
  *
  * @description Technique - Stack ⬆️
  *
- * - n = number of nodes
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
  * @returns An array containing all values of the tree in depth-first order.
@@ -35,13 +33,13 @@ depthFirstValues(a); // -> ['A', 'B', 'D', 'E', 'C', 'F']
  *
  * ⏱️ Time: O(n^2) - 🚀 Space: O(n)
  */
-// const depthFirstValues = (root) => {
-//   if (root === null) return [];
+function depthFirstValues(root) {
+  if (root === null) return [];
 
-//   // 1. Get the left and right values recursively.
-//   const leftValues = depthFirstValues(root.left); // B, D, E
-//   const rightValues = depthFirstValues(root.right); // C, F
+  // 1. Get the left and right values recursively.
+  const leftValues = depthFirstValues(root.left); // B, D, E
+  const rightValues = depthFirstValues(root.right); // C, F
 
-//   // 2. Combine the current value with left and right values.
-//   return [root.val, ...leftValues, ...rightValues];
-// };
+  // 2. Combine the current value with left and right values.
+  return [root.val, ...leftValues, ...rightValues];
+}

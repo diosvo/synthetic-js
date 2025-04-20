@@ -1,6 +1,6 @@
 # 🎯 Common Strategies
 
-## Depth First Values (Stack - LIFO)
+## [Depth First Values](./depth-first-values.js) (Stack - LIFO)
 
 ```javascript
 if (root === null) return [];
@@ -25,7 +25,7 @@ while (stack.length > 0) {
 return <EXPECTED>;
 ```
 
-## Breath First Values (Queue - FIFO)
+## [Breath First Values](./breath-first-values.js) (Queue - FIFO)
 
 ```javascript
 if (root === null) return [];
@@ -51,4 +51,6 @@ return <EXPECTED>;
 
 ### 📍 NOTEs
 
-- The solution should really be considered O(n^2) runtime if we use JS `shift()` methods runs in O(n).
+- `n` in time and space is the number of nodes.
+
+- The solution should really be considered O(n²) runtime if we use JS `shift()` methods runs in O(n).

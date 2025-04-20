@@ -2,8 +2,6 @@
  *
  * @description Technique - Queue ➡️
  *
- * - n = number of nodes
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
  * @returns An array containing all values of the tree in breath-first order.
