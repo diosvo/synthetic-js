@@ -54,3 +54,9 @@ return <EXPECTED>;
 - `n` in time and space is the number of nodes.
 
 - The solution should really be considered O(n²) runtime if we use JS `shift()` methods runs in O(n).
+
+- Travel to the leaf node
+
+  ```js
+  if (root.left === null && root.right === null) return root.value;
+  ```
