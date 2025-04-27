@@ -1,6 +1,6 @@
 # Maximum Path Sum Result
 
-When applying the `maxPathSum` algorithm to this tree:
+Apply the `maxPathSum` algorithm to this tree:
 
 ```
      3
