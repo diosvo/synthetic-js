@@ -28,8 +28,7 @@ const findPath = (node, target, path) => {
   if (findPath(node.left, target, path) || findPath(node.right, target, path))
     return true;
 
-  // Remove current node (backtrack)
+  // Backtrack: Remove current node (both children are null)
   path.pop();
-
   return false;
 };
