@@ -1,11 +1,7 @@
-/** 🔁 Iterative
- *
- * Tests if a number is prime by checking divisibility up to square root
- * A prime number is only divisible by 1 and itself
- *
- * n = input number
- *
+/**
  * ⏱️ Time: O(sqrt(n)) - 🚀 Space: O(1)
+ *
+ * @description A prime number is only divisible by 1 and itself
  */
 const isPrime = (n) => {
   if (n < 2) return false;

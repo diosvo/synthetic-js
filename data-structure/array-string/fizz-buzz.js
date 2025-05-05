@@ -1,14 +1,11 @@
-/** 🔁 Iterative
+/**
+ * ⏱️ Time: O(n) - 🚀 Space: O(n)
+ * (Space for storing the result array)
  *
- * Generates array 1 to n with replacements:
+ * @description Generates array 1 to n with replacements:
  * - "fizz" for multiples of 3
  * - "buzz" for multiples of 5
  * - "fizzbuzz" for multiples of both 3 and 5
- *
- * n = input number
- *
- * ⏱️ Time: O(n) - 🚀 Space: O(n)
- * (Space for storing the result array)
  */
 const fizzBuzz = (n) => {
   // if else 3 & 5 = 15 -> 3 -> 5
