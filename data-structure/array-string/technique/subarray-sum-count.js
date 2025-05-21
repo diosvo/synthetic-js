@@ -55,3 +55,7 @@ function optimized(numbers, target) {
 const subarraySumCount = (numbers, target) => {
   return basic(numbers, target) || optimized(numbers, target);
 };
+
+subarraySumCount([1, 3, 1, 4, -2, 3], 5); // -> 3
+subarraySumCount([1, 3, 1, 4, 3], 5); // -> 2
+subarraySumCount([1, 3, 1, 4, 3], 2); // -> 0

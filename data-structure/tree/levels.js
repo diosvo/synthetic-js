@@ -33,3 +33,6 @@ const treeLevels = (root) => {
 
   return levels;
 };
+
+treeLevels(a); // -> [['A'], ['B', 'C'], ['D', 'E', 'F']]
+treeLevels(g); // -> [[3], [11, 4], [4, -2, 1]]
