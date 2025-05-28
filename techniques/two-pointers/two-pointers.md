@@ -13,8 +13,12 @@ Common patterns in the approach entail:
 
 ### 👾 Practices
 
-- [Move Zeroes](../leet-code/0-array/1-move-zeroes.js)
-- [Has Subarray Sum](../data-structure/array-string/technique/has-subarray-sum.js) w/ Bruce Force Nested Loop
+- [Move Zeroes](../../leet-code/0-array/1-move-zeroes.js)
+- [Has Subarray Sum](../../data-structure/array-string/technique/has-subarray-sum.js) w/ Bruce Force Nested Loop
+
+#### Structy:
+
+- [Polidrome](./palindrome.js)
 
 ### Real-world application
 
