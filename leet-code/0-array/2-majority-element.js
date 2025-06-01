@@ -1,4 +1,4 @@
-const boyerMoore = function (nums) {
+function boyerMoore(nums) {
   let count = 0;
   let result = null;
 
@@ -11,9 +11,9 @@ const boyerMoore = function (nums) {
   }
 
   return result;
-};
+}
 
-const hashMap = function (nums) {
+function hashMap(nums) {
   let count = 0;
   let result = 0;
   const collection = {};
@@ -28,7 +28,7 @@ const hashMap = function (nums) {
   }
 
   return result;
-};
+}
 
 /**
  * @description Majority element that appears more than ⌊n / 2⌋ times

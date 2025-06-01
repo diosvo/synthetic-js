@@ -19,6 +19,8 @@ Common patterns in the approach entail:
 #### Structy:
 
 - [Polidrome](./palindrome.js)
+- [Uncompress](./uncompress.js)
+- [Compress](./compress.js)
 
 ### Real-world application
 
