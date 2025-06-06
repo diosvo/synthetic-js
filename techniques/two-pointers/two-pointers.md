@@ -11,6 +11,10 @@ Common patterns in the approach entail:
 1. Start from the beginning and the end until they both meet.
 2. One moves slow, another moves fast (e.g. cycle in Linked list).
 
+#### 🔑 Tips
+
+- Ensure the pointers are inbound of strings/arrays.
+
 ### 👾 Practices
 
 - [Move Zeroes](../../leet-code/0-array/1-move-zeroes.js)
