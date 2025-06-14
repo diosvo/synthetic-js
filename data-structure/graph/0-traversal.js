@@ -1,7 +1,7 @@
 /**
  * @description Technique - Stack ⬆️
  *
- * ⏱️ Time: O(n) - 🚀 Space: O(e)
+ * ⏱️ Time: O(e) - 🚀 Space: O(e)
  */
 const depthFirst = (graph, source) => {
   const stack = [source];
