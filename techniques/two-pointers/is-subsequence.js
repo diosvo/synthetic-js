@@ -1,3 +1,8 @@
+/**
+ * @description whether or not string1 is a subsequence of string2.
+ *
+ * ⏱️ Time: O(m) - 🚀 Space: O(1)
+ */
 const isSubsequence = (string1, string2) => {
   let pointer1 = 0;
   let pointer2 = 0;
