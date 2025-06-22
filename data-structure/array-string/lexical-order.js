@@ -3,7 +3,7 @@
  *
  * @returns {boolean} Returns true if word1 comes before word2 in the given alphabet order
  */
-function lexicalOrder(word1, word2, alphabet) {
+export default function lexicalOrder(word1, word2, alphabet) {
   const maxLength = Math.max(word1.length, word2.length);
 
   for (let i = 0; i < maxLength; i++) {
@@ -27,5 +27,12 @@ function lexicalOrder(word1, word2, alphabet) {
 const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
 lexicalOrder('apple', 'dock', alphabet); // -> true
-lexicalOrder('apple', 'ample', alphabet); // -> false
 lexicalOrder('app', 'application', alphabet); // -> true
+
+lexicalOrder('apple', 'ample', alphabet); // -> false
+lexicalOrder('zoo', 'tick', alphabet); // -> false
+// 25
+// z o o
+// 19
+// t i c k
+// -> 19 < 25 -> false
