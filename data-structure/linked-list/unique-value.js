@@ -6,13 +6,11 @@
 
 /** 🔄 Recursive
  *
- * - n = number of nodes
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
  * @return {ListNode} A sorted linked list.
  */
-const isUnivalueList = (head, prevVal = null) => {
+function isUnivalueList(head, prevVal = null) {
   if (head === null) return true;
 
   // Do not return false if prevVal is the first node
@@ -21,23 +19,19 @@ const isUnivalueList = (head, prevVal = null) => {
   } else {
     return false;
   }
-};
+}
 
 /** 🔁 Iterative
  *
- * - n = number of nodes
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
- *
- * @returns {boolean} Indicate whether or not the linked list contains exactly one unique value.
  */
-// const isUnivalueList = (head) => {
-//   let current = head;
+const isUnivalueList = (head) => {
+  let current = head;
 
-//   while (current !== null) {
-//     if (head.val !== current.val) return false;
-//     current = current.next;
-//   }
+  while (current !== null) {
+    if (head.val !== current.val) return false;
+    current = current.next;
+  }
 
-//   return true;
-// };
+  return true;
+};

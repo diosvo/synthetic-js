@@ -9,8 +9,6 @@
 
 /** 🔁 Iterative
  *
- * - n = number of nodes
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  *
  * @returns {number} The length of the longest streak of consecutive values in the linked list.

@@ -12,11 +12,9 @@
  *
  * @description Delete the node containing the target value.
  *
- * - n = # of list
+ * ⏱️ Time: O(n) - 🚀 Space: O(1)
  *
  * @return The head of the modified linked list
- *
- * ⏱️ Time: O(n) - 🚀 Space: O(1)
  */
 const removeNode = (head, target) => {
   // Edge case: Remove the first/last node.
@@ -45,17 +43,15 @@ const removeNode = (head, target) => {
 
 /** 🔄 Recursive
  *
- * - n = # of list
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  */
-// const removeNode = (head, target) => {
-//   // Base case: if the list is empty
-//   if (head === null) return null;
+function removeNode(head, target) {
+  // Base case: if the list is empty
+  if (head === null) return null;
 
-//   // Recursive case: traverse the list
-//   head.next = removeNode(head.next, target);
+  // Recursive case: traverse the list
+  head.next = removeNode(head.next, target);
 
-//   // If the current node's value matches the target, skip it
-//   return head.val === target ? head.next : head;
-// };
+  // If the current node's value matches the target, skip it
+  return head.val === target ? head.next : head;
+}

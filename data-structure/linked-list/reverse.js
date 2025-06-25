@@ -1,8 +1,6 @@
-/** 🔄 Recursive
+/** 🔁 Iterative
  *
  * @description Reverses the singly linked list
- *
- * - n = # of list
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
  */

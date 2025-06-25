@@ -43,3 +43,7 @@ If current is the tail node → `current.next` is null and does not have `value`
   ```
 
 - Use an optional parameter to check the previous value with **recursion**.
+
+### 📍 NOTEs
+
+- `n` is the number of nodes.

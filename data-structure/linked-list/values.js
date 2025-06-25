@@ -2,8 +2,6 @@
  *
  * @description Collect all node values in an array through iteration
  *
- * - n = number of nodes
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  */
 const linkedListValues = (head) => {

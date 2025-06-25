@@ -2,11 +2,8 @@
  *
  * @description Insert a new node with the value into the list at the specified index.
  *
- * - n = # of list
- *
- * @return The head of the modified linked list
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(1)
+ * @return The head of the modified linked list
  */
 const insertNode = (head, value, index) => {
   // Edge case: Insert the first/last node.
