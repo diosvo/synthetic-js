@@ -35,6 +35,7 @@ If current is the tail node → `current.next` is null and does not have `value`
     while (current !== null) {
       // Logic handling
 
+      // Base line traversal rule
       current = current.next;
     }
 
@@ -47,3 +48,7 @@ If current is the tail node → `current.next` is null and does not have `value`
 ### 📍 NOTEs
 
 - `n` is the number of nodes.
+
+### Use cases
+
+- Stack and Queue implementations.
