@@ -52,3 +52,5 @@ If current is the tail node → `current.next` is null and does not have `value`
 ### Use cases
 
 - Stack and Queue implementations.
+- GPS navigation.
+- Music playlists.
