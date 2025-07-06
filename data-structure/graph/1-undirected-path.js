@@ -1,22 +1,9 @@
-function buildGraph(edges) {
-  const result = {};
-
-  for (const edge of edges) {
-    const [nodeA, nodeB] = edge;
-
-    if (!(nodeA in result)) result[nodeA] = [];
-    if (!(nodeB in result)) result[nodeB] = [];
-
-    // 2-dimensional
-    result[nodeA].push(nodeB);
-    result[nodeB].push(nodeA);
-  }
-
-  return result;
-}
+import { buildGraph, undirected_graph } from './example';
 
 /**
  * ⏱️ Time: O(e) - 🚀 Space: O(e)
+ *
+ * @returns {boolean} True if there is an undirected path between nodeA and nodeB, otherwise false.
  */
 function undirectedPath(edges, nodeA, nodeB) {
   const graph = buildGraph(edges);
@@ -25,11 +12,13 @@ function undirectedPath(edges, nodeA, nodeB) {
 
   while (stack.length > 0) {
     const current = stack.pop();
+
     if (current === nodeB) return true;
 
     if (!visited.has(current)) {
       // Mark the current node as visited
       visited.add(current);
+
       for (const neighbor of graph[current]) {
         stack.push(neighbor);
       }
@@ -38,3 +27,5 @@ function undirectedPath(edges, nodeA, nodeB) {
 
   return false;
 }
+
+undirectedPath(undirected_graph, 'v', 'x'); // true

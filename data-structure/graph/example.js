@@ -25,7 +25,7 @@ const graph = {
 //
 // y → z
 
-const undirected_graph = {
+export const undirected_graph = {
   v: ['x', 'w'],
   w: [],
   x: [],
@@ -43,3 +43,25 @@ const worst_case_graph = {
   b: ['a', 'c'],
   c: ['a', 'b'],
 };
+
+/**
+ * @description Build an undirected graph from a list of edges.
+ *
+ */
+export function buildGraph(edges) {
+  const result = {};
+
+  for (const edge of edges) {
+    const [nodeA, nodeB] = edge;
+
+    // Initialize the nodes in the graph if they don't exist
+    if (!(nodeA in result)) result[nodeA] = [];
+    if (!(nodeB in result)) result[nodeB] = [];
+
+    // 2-dimensional
+    result[nodeA].push(nodeB);
+    result[nodeB].push(nodeA);
+  }
+
+  return result;
+}
