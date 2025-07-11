@@ -1,3 +1,5 @@
+import { graph, undirected_graph } from './example';
+
 /**
  * ⏱️ Time: O(n) - 🚀 Space: O(e)
  *
