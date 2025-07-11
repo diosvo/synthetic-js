@@ -8,7 +8,7 @@
 // ↓
 // d → f
 
-const graph = {
+export const graph = {
   a: ['c', 'b'],
   b: ['d'],
   c: ['e'],
