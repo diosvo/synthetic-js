@@ -1,4 +1,6 @@
 /**
+ * @argument {Object} graph - An adjacency list of an undirected graph.
+ *
  * ⏱️ Time: O(e) - 🚀 Space: O(n)
  *
  * @returns {number} The size of the largest connected component in the graph.
@@ -20,7 +22,6 @@ const exploreSize = (graph, current, visited) => {
 
   // Base case: avoid a cycle
   if (visited.has(node)) return 0;
-
   visited.add(node);
 
   // Add it over time b/c it represents the current node.
@@ -32,3 +33,14 @@ const exploreSize = (graph, current, visited) => {
 
   return size;
 };
+
+largestComponent({
+  0: ['8', '1', '5'],
+  1: ['0'],
+  5: ['0', '8'],
+  8: ['0', '5'],
+  2: ['3', '4'],
+  3: ['2', '4'],
+  4: ['3', '2'],
+}); // -> 4
+largestComponent({}); // -> 0
