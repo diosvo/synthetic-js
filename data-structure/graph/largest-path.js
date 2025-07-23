@@ -1,3 +1,5 @@
+import { traverseDistance } from './example';
+
 /**
  * @argument {Object} graph - An adjacency list for a directed acyclic graph
  *
@@ -22,24 +24,6 @@ const longestPath = (graph) => {
   }
 
   return Math.max(...Object.values(distance));
-};
-
-const traverseDistance = (graph, node, distance) => {
-  // Base case: Hit the terminal node
-  if (node in distance) return distance[node];
-
-  // It would be the distance from neighbor to somefar of ending point
-  let maxLength = 0;
-  // Traverse the neighbor
-  for (const neighbor of graph[node]) {
-    // Find max value among neighbor attempts
-    let attempt = traverseDistance(graph, neighbor, distance);
-    if (attempt > maxLength) maxLength = attempt;
-  }
-
-  // 1 - one edge from the current node to that neighbor
-  distance[node] = 1 + maxLength;
-  return distance[node];
 };
 
 longestPath({
