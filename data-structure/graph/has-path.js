@@ -1,4 +1,4 @@
-import { graph, undirected_graph } from './example';
+import { graph } from './example';
 
 /**
  * ⏱️ Time: O(n) - 🚀 Space: O(e)
@@ -21,4 +21,20 @@ const hasPath = (graph, source, destination) => {
 };
 
 hasPath(graph, 'a', 'f'); // true
-hasPath(undirected_graph, 'v', 'z'); // false
+
+// v → x
+// ↓
+// w
+//
+// y → z
+hasPath(
+  {
+    v: ['x', 'w'],
+    w: [],
+    x: [],
+    y: ['z'],
+    z: [],
+  },
+  'v',
+  'z'
+); // false

@@ -19,19 +19,13 @@ export const graph = {
 
 /* ==== UNDIRECTED ==== */
 
-// v → x
-// ↓
-// w
-//
-// y → z
-
-export const undirected_graph = {
-  v: ['x', 'w'],
-  w: [],
-  x: [],
-  y: ['z'],
-  z: [],
-};
+export const edges = [
+  ['i', 'j'],
+  ['k', 'i'],
+  ['m', 'k'],
+  ['k', 'l'],
+  ['o', 'n'],
+];
 
 /* ==== 🔺 WORST CASE 🔻 ==== */
 

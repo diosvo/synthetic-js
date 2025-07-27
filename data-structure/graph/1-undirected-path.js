@@ -1,4 +1,4 @@
-import { buildGraph, undirected_graph } from './example';
+import { buildGraph, edges } from './example';
 
 /**
  * ⏱️ Time: O(e) - 🚀 Space: O(e)
@@ -28,4 +28,5 @@ function undirectedPath(edges, nodeA, nodeB) {
   return false;
 }
 
-undirectedPath(undirected_graph, 'v', 'x'); // true
+undirectedPath(edges, 'j', 'm'); // -> true
+undirectedPath(edges, 'k', 'o'); // -> false
