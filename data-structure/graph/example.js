@@ -39,7 +39,9 @@ const worst_case_graph = {
 };
 
 /**
- * @description Build an undirected graph from a list of edges.
+ * @argument {Array} edges - List of edges where each edge is a pair of nodes
+ *
+ * @description Build a directed graph from a list of edges
  */
 export function buildGraph(edges) {
   const result = {};
@@ -60,9 +62,30 @@ export function buildGraph(edges) {
 }
 
 /**
- * @example refer longestPath function
+ * @argument {number} num - Number of nodes in the graph
+ * @argument {Array} prereqs - List of prerequisites where each prerequisite is a pair of nodes
  *
- * @description Find the longest path in a directed acyclic graph (DAG).
+ * @description `prereqs` have ids ranging from 0 through n - 1.
+ * A single prerequisite of [A, B] means that A must be taken before B
+ */
+export function buildGraphWithPrereqs(num, prereqs) {
+  const graph = {};
+
+  // Ensure that node is in range
+  for (let i = 0; i < num; i++) {
+    graph[i] = [];
+  }
+
+  for (const [A, B] of prereqs) {
+    // Node A must be taken before node B
+    graph[A].push(B);
+  }
+
+  return graph;
+}
+
+/**
+ * @description Find the longest path in a directed acyclic graph (DAG) - refer `longestPath` function
  */
 export function traverseDistance(graph, node, distance) {
   // Base case: Hit the terminal node

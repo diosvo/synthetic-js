@@ -1,4 +1,4 @@
-import { traverseDistance } from './example';
+import { buildGraphWithPrereqs, traverseDistance } from './example';
 
 /**
  * @argument {Object} graph - An adjacency list for a directed acyclic graph
@@ -12,7 +12,7 @@ import { traverseDistance } from './example';
  */
 const semestersRequired = (numCourses, prereqs) => {
   // [1] Transform to a graph
-  const graph = buildGraph(numCourses, prereqs);
+  const graph = buildGraphWithPrereqs(numCourses, prereqs);
 
   // [2] Calculate the distance: {[node]: max_distance}
   const distance = {};
@@ -32,23 +32,6 @@ const semestersRequired = (numCourses, prereqs) => {
 
   // [3] Find the maximum value
   return Math.max(...Object.values(distance));
-};
-
-const buildGraph = (numCourses, prereqs) => {
-  let graph = {};
-
-  // Ensure that course is in range
-  for (let index = 0; index < numCourses; index++) {
-    graph[index] = [];
-  }
-
-  for (const prereq of prereqs) {
-    const [a, b] = prereq;
-    // Node A must be taken before node B
-    graph[a].push(b);
-  }
-
-  return graph;
 };
 
 semestersRequired(6, []); // -> 1

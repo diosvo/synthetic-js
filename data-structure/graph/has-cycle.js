@@ -1,5 +1,5 @@
 /**
- * ⏱️ Time: O(n) - 🚀 Space: O(e)
+ * ⏱️ Time: O(n^2) - 🚀 Space: O(n)
  *
  * @returns {boolean} true if the graph has a cycle, false otherwise.
  */
