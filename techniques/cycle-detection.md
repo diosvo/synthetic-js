@@ -11,6 +11,7 @@
 1. Graph
 
    - [Has Cycle](../data-structure/graph/has-cycle.js)
+   - [Prerequisite Possible](../data-structure/graph/prereqs-possible.js)
 
 ## Floyd
 
