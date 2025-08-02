@@ -1,6 +1,8 @@
 # Dynamic Programming
 
-⛑️ Solution: Memoization w/ Recursion
+⛑️ **Solution**: Just do with Brute-Force first, then optimize it with memoization.
+
+🌳 Visualize the problem as a tree.
 
 🤔 Memoization like a stack, it remembers node within a value.
 
