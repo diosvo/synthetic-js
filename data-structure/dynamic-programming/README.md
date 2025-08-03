@@ -10,3 +10,4 @@
 
 1. [fib](./fib.js)
 2. [tribonacci](./tribonacci.js)
+3. [sum possible](./sum-possible.js)
