@@ -1,9 +1,7 @@
 /**
- * @argument {number} n - A number
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
- * @returns {number} the  n-th Fibonacci number sequence.
+ * @returns {number} The n-th Fibonacci number sequence.
  */
 function fib(n, memo = {}) {
   // Check if the result is already computed

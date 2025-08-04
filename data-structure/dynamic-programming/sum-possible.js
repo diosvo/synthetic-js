@@ -5,8 +5,6 @@
  * @name n is length of numbers
  *
  * ⏱️ Time: O(a*n) - 🚀 Space: O(n)
- *
- * @returns {number} the n-th Tribonacci number sequence.
  */
 const sumPossible = (amount, numbers, memo = {}) => {
   // Base cases

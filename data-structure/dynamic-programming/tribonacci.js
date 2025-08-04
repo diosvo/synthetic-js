@@ -1,9 +1,7 @@
 /**
- * @argument {number} n - A number
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
- * @returns {number} the n-th Tribonacci number sequence.
+ * @returns {number} The n-th Tribonacci number sequence.
  */
 const tribonacci = (n, memo = {}) => {
   if (n in memo) return memo[n];
