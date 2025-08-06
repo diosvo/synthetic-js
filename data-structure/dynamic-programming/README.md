@@ -13,7 +13,7 @@ Just do with Brute-Force first:
 If it works, optimize it with:
 
 - Tabulation (bottom-up)
-- Memoization (top-down) 📌 - Base case is the last node.
+- 📌 Memoization (top-down) - Base case is the last node.
 
 🌳 Visualize the problem as a tree.
 
@@ -34,6 +34,8 @@ If it works, optimize it with:
 Do it step by step:
 
 <u>Step 1</u> Base case: Out of bounds check.
+
+> _Because it only moves down or right, so we don't need to check row and colum less than zero._
 
 ```js
 if (row === grid.length || column === grid[0].length) return <base_case_value>;
@@ -64,4 +66,5 @@ if (position in memo) return memo[position];
 
 #### 👾 Practices
 
-4. [count paths](./count-paths.js)
+1. [count paths](./count-paths.js)
+2. [max path sum](./max-path-sum.js)
