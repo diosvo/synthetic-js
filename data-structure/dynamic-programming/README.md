@@ -68,3 +68,5 @@ if (position in memo) return memo[position];
 
 1. [count paths](./count-paths.js)
 2. [max path sum](./max-path-sum.js)
+3. [non adjacent sum](./non-adjacent-sum.js)
+
