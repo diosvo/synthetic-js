@@ -70,3 +70,6 @@ if (position in memo) return memo[position];
 2. [max path sum](./max-path-sum.js)
 3. [non adjacent sum](./non-adjacent-sum.js)
 
+### Number
+
+1. [summing squares](./summing-squares.js)
