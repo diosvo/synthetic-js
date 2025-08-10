@@ -26,6 +26,11 @@ If it works, optimize it with:
 1. [fib](./fib.js)
 2. [tribonacci](./tribonacci.js)
 3. [sum possible](./sum-possible.js)
+4. [summing squares](./summing-squares.js)
+
+Recursive with the index:
+
+1. [couting change](./counting-change.js)
 
 ### Two-dimensional
 

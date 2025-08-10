@@ -24,4 +24,4 @@ const summingSquares = (num, memo = {}) => {
 summingSquares(8); // -> 2
 summingSquares(9); // -> 1
 summingSquares(12); // -> 3
-summingSquares(68); // -> 2 - ✔️
+summingSquares(68); // -> 2 - 💥
