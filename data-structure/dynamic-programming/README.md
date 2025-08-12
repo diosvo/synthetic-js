@@ -31,6 +31,7 @@ If it works, optimize it with:
 Recursive with the index:
 
 1. [couting change](./counting-change.js)
+2. [array-stepper](./array-stepper.js)
 
 ### Two-dimensional
 
