@@ -57,6 +57,7 @@
 > Modular buckets | Nested loops
 
 - divisible-sum-pairs
+- get-money-spent
 - sock-merchant (pairing via map)
 
 ### Range checking
