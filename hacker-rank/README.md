@@ -35,10 +35,11 @@
 
 > Formula | Number theory (lcm/gcd, equations)
 
-- between-two-sets (lcm/gcd)
-- drawing-book (min flips via math)
-- grading (rounding logic)
-- kangaroo (linear equation/check)
+- between-two-sets
+- cat-and-mouse
+- drawing-book
+- grading
+- kangaroo
 
 ### Matrix traversal
 
