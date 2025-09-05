@@ -29,6 +29,7 @@
 
 - birthday-cake-candles (count max occurrences)
 - migratory-birds
+- picking-numbers
 - sock-merchant
 
 ### Math
