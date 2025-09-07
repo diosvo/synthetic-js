@@ -38,6 +38,7 @@
 
 - between-two-sets
 - cat-and-mouse
+- climbing-the-leaderboard
 - drawing-book
 - grading
 - kangaroo
@@ -92,6 +93,7 @@
 - migratory-birds
 - mini-max-sum
 - plus-minus
+- the-hurdle-race
 
 ### Sliding window
 
