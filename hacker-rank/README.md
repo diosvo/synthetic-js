@@ -15,6 +15,7 @@
 
 > Rounding rules
 
+- angry-professor
 - grading
 
 ### Date logic
@@ -53,6 +54,7 @@
 
 > Visual output
 
+- designer-pdf-viewer
 - staircase
 
 ### Pair counting
@@ -79,8 +81,9 @@
 
 > Loop until condition
 
-- kangaroo
 - counting-valleys
+- utopian-tree
+- kangaroo
 
 ### Single-pass aggregation
 
