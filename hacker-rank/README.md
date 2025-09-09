@@ -37,6 +37,7 @@
 
 > Formula | Number theory (lcm/gcd, equations)
 
+- beautiful-days-at-the-movies
 - between-two-sets
 - cat-and-mouse
 - climbing-the-leaderboard
