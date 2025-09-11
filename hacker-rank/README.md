@@ -44,6 +44,7 @@
 - drawing-book
 - grading
 - kangaroo
+- save-the-prisoner
 
 ### Matrix traversal
 
@@ -85,6 +86,7 @@
 - counting-valleys
 - utopian-tree
 - kangaroo
+- strange-advertising
 
 ### Single-pass aggregation
 
