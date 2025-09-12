@@ -1,7 +1,4 @@
-/** 🔄 Recursive
- *
- * @description Calculate the sum of the lengths of all strings in an array
- *
+/**
  * ⏱️ Time: O(n²) - 🚀 Space: O(n²)
  */
 const sumOfLengths = (strings) => {

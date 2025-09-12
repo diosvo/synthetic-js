@@ -1,5 +1,4 @@
-/** 🔄 Recursive
- *
+/**
  * @description Whether or not the string is the same forwards and backwards.
  *
  * ⏱️ Time: O(n²) - 🚀 Space: O(n²)

@@ -1,5 +1,4 @@
-/** 🔄 Recursive
- *
+/**
  * ⏱️ Time: O(n²) - 🚀 Space: O(n²)
  */
 const reverseString = (s) => {

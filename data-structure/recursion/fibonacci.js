@@ -1,6 +1,5 @@
-/** 🔄 Recursive
- *
- * @description Fibonacci sequence using recursion
+/**
+ * @description fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2)
  *
  * ⏱️ Time: O(2^n) - 🚀 Space: O(n)
  */
@@ -10,6 +9,5 @@ const fibonacci = (n) => {
   return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
-// Steps:
-// fibonacci(n) -> fibonacci(n - 1) + fibonacci(n - 2)
 fibonacci(6); // -> 8
+fibonacci(2); // ->
