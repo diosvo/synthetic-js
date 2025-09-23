@@ -44,6 +44,7 @@
 - drawing-book
 - grading
 - kangaroo
+- permutation-equation
 - save-the-prisoner
 
 ### Matrix traversal

@@ -3,7 +3,7 @@
  * @argument {number} k - The rotation count
  * @argument {Array<number>} queries - The indices to report
  *
- * ⏱️ Time: O(1) - 🚀 Space: O(n^2)
+ * ⏱️ Time: O(n²) - 🚀 Space: O(n)
  */
 function circularArrayRotation(a, k, queries) {
   const b = [];
@@ -24,7 +24,7 @@ function circularArrayRotation(a, k, queries) {
 }
 
 /**
- * ⏱️ Time: O(q) - 🚀 Space: O(1)
+ * ⏱️ Time: O(q) - 🚀 Space: O(q)
  */
 const circularArrayRotation = (a, k, queries) => {
   const n = a.length;
