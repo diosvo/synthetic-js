@@ -31,7 +31,7 @@ If it works, optimize it with:
 Recursive with the index:
 
 1. [couting change](./counting-change.js)
-2. [array-stepper](./array-stepper.js)
+2. [array stepper](./array-stepper.js)
 
 ### Two-dimensional
 
@@ -76,6 +76,11 @@ if (position in memo) return memo[position];
 2. [max path sum](./max-path-sum.js)
 3. [non adjacent sum](./non-adjacent-sum.js)
 
-### Number
+### Primitive types
+
+> Number, String
+
+#### 👾 Practices
 
 1. [summing squares](./summing-squares.js)
+2. [max palin subsequence](./max-palin-subsequence.js)
