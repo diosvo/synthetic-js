@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <h2>A game you know</h2>
+    <div id="players">
+      <div id="p1" class="player">
+        Player
+        <span id="p1-symbol">X</span>
+        :
+        <span id="p1-name">Dios</span>
+      </div>
+      <div id="p2" class="player">
+        Player
+        <span id="p2-symbol">0</span>
+        :
+        <span id="p2-name">Kitu</span>
+      </div>
+    </div>
+    <div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+  </body>
+  <script>
+    console.group('[DOM]');
+    console.groupCollapsed('Finding elements');
+    console.log("All 'p' elements", document.getElementsByTagName('p'));
+    console.log("Text 'X'", document.getElementById('p1-symbol').textContent);
+    console.log(
+      "The number of 'square' in the board",
+      document.querySelectorAll('.square').length,
+    );
+    console.log('The text', document.querySelector('h2').textContent);
+    console.groupEnd();
+  </script>
+</html>
