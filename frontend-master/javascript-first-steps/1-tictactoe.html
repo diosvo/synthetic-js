@@ -45,5 +45,14 @@
     );
     console.log('The text', document.querySelector('h2').textContent);
     console.groupEnd();
+    console.groupCollapsed('Change a Web page');
+    console.log(
+      'Change the player name',
+      (document.getElementById('p1-name').textContent = 'Nhung'),
+    );
+    console.log(
+      "Change subtitle to 'A game you know & love'",
+      document.getElementsByTagName('h2')[0].append(' & love'),
+    );
   </script>
 </html>
