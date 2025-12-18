@@ -22,7 +22,7 @@
         <span id="p2-name">Kitu</span>
       </div>
     </div>
-    <div>
+    <div id="board">
       <div class="square"></div>
       <div class="square"></div>
       <div class="square"></div>
@@ -35,6 +35,8 @@
     </div>
   </body>
   <script>
+    const nameA = 'Nhung';
+
     console.group('[DOM]');
     console.groupCollapsed('Finding elements');
     console.log("All 'p' elements", document.getElementsByTagName('p'));
@@ -48,11 +50,22 @@
     console.groupCollapsed('Change a Web page');
     console.log(
       'Change the player name',
-      (document.getElementById('p1-name').textContent = 'Nhung'),
+      (document.getElementById('p1-name').textContent = nameA),
     );
     console.log(
       "Change subtitle to 'A game you know & love'",
       document.getElementsByTagName('h2')[0].append(' & love'),
     );
+    console.groupEnd();
+    console.groupEnd();
+
+    console.group('[Expressions]');
+    console.groupCollapsed('Variables');
+    console.log(
+      "The number of children in '#board' element",
+      document.getElementById('board').children.length,
+    );
+    console.groupEnd();
+    console.groupEnd();
   </script>
 </html>
