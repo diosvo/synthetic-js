@@ -87,3 +87,4 @@ if (position in memo) return memo[position];
 3. [overlap subsequence](./overlap-subsequence.js)
 4. [can concat](./can-concat.js)
 5. [quickest concat](./quickest-concat.js)
+6. [valid compound](./valid-compound.js)
