@@ -17,4 +17,5 @@ const bottomRightValue = (root) => {
   return current.val;
 };
 
+bottomRightValue(a); // -> 'F'
 bottomRightValue(g); // -> 1

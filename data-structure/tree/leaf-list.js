@@ -23,3 +23,4 @@ const leafList = (root) => {
 
 leafList(a); // -> ['D', 'E', 'F']
 leafList(g); // -> [4, -2, 1]
+leafList(null); // -> [ ]

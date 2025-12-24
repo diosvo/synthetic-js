@@ -1,4 +1,4 @@
-# Wrap up
+# Binary Tree
 
 ❓ What term is used to describe:
 
@@ -9,9 +9,14 @@
 
 ❓ What does the word "binary" mean in the context of "binary tree" → Each node has at most two children.
 
-# 🎯 Common Strategies
+# 🎯 Strategies
 
-## [Depth First Values](./depth-first-values.js) (Stack - LIFO)
+## [Depth First Values](./0-depth-first-values.js) (Stack - LIFO)
+
+There are 2 ways to implement:
+
+- Iteratively using an explicit stack.
+- Recursively using the underlying call stack.
 
 ```javascript
 if (root === null) return [];
@@ -36,7 +41,14 @@ while (stack.length > 0) {
 return <EXPECTED>;
 ```
 
-## [Breath First Values](./breath-first-values.js) (Queue - FIFO)
+### 👾 Practices
+
+- [max root to leaf path sum](./max-root-to-leaf-path-sum.js)
+- [tree path finder](./tree-path-finder.js)
+- [all tree paths](./all-tree-paths.js)
+- [leaf list](./leaf-list.js)
+
+## [Breath First Values](./1-breath-first-values.js) (Queue - FIFO)
 
 ```javascript
 if (root === null) return [];
@@ -59,6 +71,22 @@ while (queue.length > 0) {
 
 return <EXPECTED>;
 ```
+
+### 👾 Practices
+
+- [bottom right value](./bottom-right-value.js)
+- [level averages](./level-averages.js)
+
+## 👾 Practices
+
+Can be implemented with both strategies.
+
+- [tree sum](./tree-sum.js)
+- [tree includes](./tree-includes.js)
+- [tree min value](./tree-min-value.js)
+- [tree value count](./tree-value-count.js)
+- [how height](./how-height.js)
+- [tree levels](./tree-levels.js)
 
 ### 📍 NOTEs
 

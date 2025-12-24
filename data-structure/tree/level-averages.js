@@ -24,8 +24,9 @@ const levelAverages = (root) => {
   }
 
   return result.map(
-    (level) => level.reduce((sum, value) => sum + value, 0) / level.length
+    (level) => level.reduce((sum, value) => sum + value, 0) / level.length,
   );
 };
 
 levelAverages(g); // [3, 7.5, 1]
+levelAverages(null); // -> [ ]

@@ -11,14 +11,9 @@ const treeIncludes = (root, target) => {
   return treeIncludes(root.left, target) || treeIncludes(root.right, target);
 };
 
-treeIncludes(a, 'A'); // -> true
-treeIncludes(a, 'Z'); // -> false
-
 /** 🔁 Iterative
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
- *
- * @returns {boolean} Indicate whether or not the value is contained in the tree
  */
 function treeIncludes(root, target) {
   if (root === null) return false;
@@ -35,3 +30,7 @@ function treeIncludes(root, target) {
 
   return false;
 }
+
+treeIncludes(a, 'A'); // -> true
+treeIncludes(a, 'Z'); // -> false
+treeIncludes(null, 'b'); // -> false

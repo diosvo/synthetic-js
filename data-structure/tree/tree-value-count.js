@@ -2,7 +2,7 @@
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
- * @returns {Number} The number of times that the target occurs in the tree.
+ * @returns {number} The number of times that the target occurs in the tree.
  */
 const treeValueCount = (root, target) => {
   if (root === null) return 0;
@@ -15,14 +15,9 @@ const treeValueCount = (root, target) => {
   );
 };
 
-treeValueCount(a, 'A'); // -> 1
-treeValueCount(a, 'B'); // -> 2
-
 /** 🔁 Iterative
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
- *
- * @returns {Number} The number of times that the target occurs in the tree.
  */
 function treeValueCount(root, target) {
   if (root === null) return 0;
@@ -40,3 +35,7 @@ function treeValueCount(root, target) {
 
   return counter;
 }
+
+treeValueCount(a, 'A'); // -> 1
+treeValueCount(g, 4); // -> 2
+treeValueCount(null, 42); // -> 0

@@ -1,6 +1,6 @@
-/** 🔄 Recursive
- *
+/**
  * @description Patterns: Sum (recursive) + Min value
+ * ✨ Execute top-down traversal but resolve values bottom-up
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
@@ -17,7 +17,5 @@ const maxPathSum = (root) => {
 
   return root.value + maxChild;
 };
-
-// Execute top-down traversal but resolve values bottom-up
 
 maxPathSum(g); // -> 18
