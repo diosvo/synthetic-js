@@ -1,4 +1,4 @@
-# What is recursion and how is it used?
+# Recursion
 
 ## Definition
 
@@ -6,6 +6,11 @@ A technique in programming where a function calls itself in order to solve a pro
 
 - Base case: stops calling itself, preventing an infinite loop.
 - Recursive case: calls itself with a modified argument, moving towards the base case.
+
+### Intuition
+
+- Smaller input → Easier problem.
+- Reduce input size → Solve problem.
 
 ## Tail Recursion
 

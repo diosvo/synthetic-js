@@ -1,6 +1,6 @@
 # 🧩 Key concept
 
-- A plain old JS can be used as a hash map.
+- A plain old Object can be used as a hash map.
 
 - `Map` stores key-value pairs / `Set` only store keys.
 
