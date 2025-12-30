@@ -1,4 +1,5 @@
-/**
+/** 🔁 Iterative
+ *
  * @description Technique - Stack ⬆️
  *
  * ⏱️ Time: O(e) - 🚀 Space: O(e)
@@ -16,6 +17,17 @@ const depthFirst = (graph, source) => {
 };
 
 depthFirst(graph, 'a'); // abdfce
+
+/**
+ * 🔄 Recursive
+ */
+function depthFirst(graph, source) {
+  console.log(source);
+
+  for (const neighbor of graph[source]) {
+    depthFirst(graph, neighbor);
+  }
+}
 
 const breathFirst = (graph, source) => {
   const queue = [source];
