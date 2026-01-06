@@ -34,6 +34,7 @@ const findPath = (node, target, path) => {
 };
 
 pathFinder(a, 'D'); // -> ['A', 'B', 'D']
+pathFinder(a, 'P'); // -> null
 pathFinder(null, 'x'); // -> null
 
 const root = new Node(0);

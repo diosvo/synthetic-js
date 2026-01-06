@@ -47,6 +47,7 @@ return <EXPECTED>;
 - [tree path finder](./tree-path-finder.js)
 - [all tree paths](./all-tree-paths.js)
 - [leaf list](./leaf-list.js)
+- [lowest common ancestor](./lowest-common-ancestor.js)
 
 ## [Breath First Values](./1-breath-first-values.js) (Queue - FIFO)
 
