@@ -88,6 +88,7 @@ Can be implemented with both strategies.
 - [tree value count](./tree-value-count.js)
 - [how height](./how-height.js)
 - [tree levels](./tree-levels.js)
+- [flip tree](./flip-tree.js)
 
 ### 📍 NOTEs
 
