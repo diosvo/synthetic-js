@@ -47,7 +47,6 @@ return <EXPECTED>;
 - [tree path finder](./tree-path-finder.js)
 - [all tree paths](./all-tree-paths.js)
 - [leaf list](./leaf-list.js)
-- [lowest common ancestor](./lowest-common-ancestor.js)
 
 ## [Breath First Values](./1-breath-first-values.js) (Queue - FIFO)
 
@@ -88,7 +87,12 @@ Can be implemented with both strategies.
 - [tree value count](./tree-value-count.js)
 - [how height](./how-height.js)
 - [tree levels](./tree-levels.js)
+
+### Recursion
+
+- [lowest common ancestor](./lowest-common-ancestor.js)
 - [flip tree](./flip-tree.js)
+- [lefty nodes](./lefty-nodes.js)
 
 ### 📍 NOTEs
 
