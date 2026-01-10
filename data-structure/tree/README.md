@@ -93,6 +93,7 @@ Can be implemented with both strategies.
 - [lowest common ancestor](./lowest-common-ancestor.js)
 - [flip tree](./flip-tree.js)
 - [lefty nodes](./lefty-nodes.js)
+- [binary search tree includes](./binary-search-tree-includes.js)
 
 ### 📍 NOTEs
 
