@@ -94,6 +94,8 @@ Can be implemented with both strategies.
 - [flip tree](./flip-tree.js)
 - [lefty nodes](./lefty-nodes.js)
 - [binary search tree includes](./binary-search-tree-includes.js)
+- [is binary search tree](./is-binary-search-tree.js)
+- [post order](./post-order.js)
 
 ### 📍 NOTEs
 
