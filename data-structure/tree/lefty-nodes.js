@@ -1,5 +1,4 @@
-/** 🔄 Recursive
- *
+/**
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
  * @returns {Array} An array of lefty node values on every level of the tree.

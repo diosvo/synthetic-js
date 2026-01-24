@@ -1,5 +1,4 @@
-/** 🔁 Iterative
- *
+/**
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
  * @returns {Array} The values of all leaf nodes in left-to-right order.

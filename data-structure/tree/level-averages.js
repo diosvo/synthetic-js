@@ -1,5 +1,4 @@
-/** 🔁 Iterative
- *
+/**
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
  * @returns {Array<number>} The average value of each level.

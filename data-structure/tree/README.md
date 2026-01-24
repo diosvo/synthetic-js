@@ -9,6 +9,20 @@
 
 ❓ What does the word "binary" mean in the context of "binary tree" → Each node has at most two children.
 
+# Binary Search Tree
+
+Every node, values in the left subtree are less than the node and values in the right subtree are greater than the node.
+
+❓ What is the worst-case height for a balanced binary tree → O(log(n))
+
+❓ Define what "depth" is → The distance of a node from the root.
+
+❓ Define what "height" is → The distance of the root to the farthest leaf.
+
+→ Worst case: O(n). The tree degenerates into a linked-list shape.
+
+❓ Define what "balance" is → For every node, the height between left and right subtree differs by at most 1.
+
 # 🎯 Strategies
 
 ## [Depth First Values](./0-depth-first-values.js) (Stack - LIFO)
@@ -96,6 +110,9 @@ Can be implemented with both strategies.
 - [binary search tree includes](./binary-search-tree-includes.js)
 - [is binary search tree](./is-binary-search-tree.js)
 - [post order](./post-order.js)
+- [build tree in post](./build-tree-in-post.js)
+- [build tree in pre](./build-tree-in-pre.js)
+- [is tree balanced](./is-tree-balanced.js)
 
 ### 📍 NOTEs
 
