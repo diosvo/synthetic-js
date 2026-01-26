@@ -12,3 +12,7 @@
 - BST: Left < Node < Right
 - Min-Heap: Root must be min. Parent <= Children
 - Max-Heap: Root must be max. Parent >= Children
+
+## 👾 Practices
+
+- [heap insertion](./heap-insertion.js)
