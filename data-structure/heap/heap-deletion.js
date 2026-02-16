@@ -1,38 +1,6 @@
-class MinHeap {
-  constructor() {
-    this.array = [];
-  }
+import HeapInsertion from './heap-insertion';
 
-  isEmpty() {
-    return this.array.length === 0;
-  }
-
-  size() {
-    return this.array.length;
-  }
-
-  swap(idx1, idx2) {
-    [this.array[idx1], this.array[idx2]] = [this.array[idx2], this.array[idx1]];
-  }
-
-  siftUp(idx) {
-    let currentIdx = idx;
-    while (currentIdx > 0) {
-      const parentIdx = Math.floor((currentIdx - 1) / 2);
-      if (this.array[currentIdx] < this.array[parentIdx]) {
-        this.swap(currentIdx, parentIdx);
-        currentIdx = parentIdx;
-      } else {
-        break;
-      }
-    }
-  }
-
-  insert(val) {
-    this.array.push(val);
-    this.siftUp(this.size() - 1);
-  }
-
+export default class HeapDeletion extends HeapInsertion {
   siftDown(idx) {
     let currentIdx = idx;
     while (currentIdx < this.size() - 1) {
@@ -62,6 +30,11 @@ class MinHeap {
     }
   }
 
+  /**
+   * ⏱️ Time: O(log(n)) - 🚀 Space: O(1)
+   * 
+   * @returns The minimum value in the heap.
+   */
   extractMin() {
     if (this.isEmpty()) return null;
 
@@ -74,9 +47,8 @@ class MinHeap {
   }
 }
 
-let heap;
 
-heap = new MinHeap();
+heap = new HeapDeletion();
 heap.insert(12);
 heap.insert(13);
 heap.insert(11);
@@ -89,7 +61,7 @@ heap.extractMin(); // -> 4
 heap.extractMin(); // -> 9
 heap.extractMin(); // -> 11
 
-heap = new MinHeap();
+heap = new HeapDeletion();
 heap.insert(12);
 heap.insert(93);
 heap.insert(63);
