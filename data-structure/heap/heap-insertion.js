@@ -1,36 +1,10 @@
-import MinHeap from './min-heap';
+import Heap from './heap';
 
-export default class HeapInsertion extends MinHeap {
-  siftUp(index) {
-    let currentIndex = index;
-
-    while (currentIndex > 0) {
-      const parentIndex = Math.floor((currentIndex - 1) / 2);
-      // Compare its value with parent value
-      if (this.array[currentIndex] < this.array[parentIndex]) {
-        this.swap(currentIndex, parentIndex);
-        currentIndex = parentIndex;
-      } else {
-        break;
-      }
-    }
-  }
-
-  /**
-   * ⏱️ Time: O(log(n)) - 🚀 Space: O(1)
-   *
-   * @returns Insert the given value into the heap.
-   */
-  insert(value) {
-    this.array.push(value);
-    // The index added ^
-    this.siftUp(this.size() - 1);
-  }
-}
+// New function: insert
 
 let heap;
 
-heap = new HeapInsertion();
+heap = new Heap();
 heap.insert(12);
 heap.insert(13);
 heap.insert(11);
@@ -52,7 +26,7 @@ heap.insert(14);
 //
 // -> [ 4, 11, 9, 13, 20, 12, 22, 14 ]
 
-heap = new HeapInsertion();
+heap = new Heap();
 heap.insert(12);
 heap.insert(93);
 heap.insert(63);

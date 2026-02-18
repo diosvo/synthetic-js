@@ -25,8 +25,12 @@ An array.
 
 ## 👾 Practices
 
-[min-heap](./min-heap.js)
+min-heap:
 
 - [heap insertion](./heap-insertion.js)
 - [heap deletion](./heap-deletion.js)
 - [kth-largest](./kth-largest.js)
+
+max-heap:
+
+- [k-smallest](./k-smallest.js)

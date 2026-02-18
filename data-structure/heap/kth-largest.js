@@ -1,4 +1,4 @@
-import HeapDeletion from './heap-deletion';
+import Heap from './heap';
 
 /**
  * ⏱️ Time: O(n*log(n)) - 🚀 Space: O(n)
@@ -6,7 +6,7 @@ import HeapDeletion from './heap-deletion';
  * @returns The kth largest number in the given array.
  */
 const kthLargest = (numbers, k) => {
-  const sortedArr = numbers.sort((x, y) => Number(x) - Number(y));
+  const sortedArr = numbers.sort((x, y) => x - y);
   return sortedArr.at(-k);
 };
 
@@ -16,19 +16,18 @@ const kthLargest = (numbers, k) => {
  * @returns The kth largest number in the given array.
  */
 function kthLargest(numbers, k) {
-  const heap = new HeapDeletion(); // as min heap
+  const heap = new Heap();
 
   for (number of numbers) {
     heap.insert(numbers);
 
     // If the heap size exceeds k, remove the minimum value (root)
     if (heap.size() > k) {
-      heap.extractMin();
+      heap.extractRoot();
     }
   }
 
-  // Return the root
-  return heap.extractMin();
+  return heap.extractRoot();
 }
 
 kthLargest([9, 2, 6, 6, 1, 5, 8, 7], 3); // -> 7
