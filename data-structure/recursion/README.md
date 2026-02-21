@@ -7,21 +7,18 @@ A technique in programming where a function calls itself in order to solve a pro
 - Base case: stops calling itself, preventing an infinite loop.
 - Recursive case: calls itself with a modified argument, moving towards the base case.
 
+## Exaustive Recursion
+
+Include generating all permutations and combinations of a given set of elements.
+
 ### Intuition
 
 - Smaller input → Easier problem.
 - Reduce input size → Solve problem.
 
-## Tail Recursion
+### Tail Recursion
 
 The recursion call is the last operation in the function
-
-```javascript
-function factorial(n, acc = 1) {
-  if (n === 0) return acc;
-  return factorial(n - 1, n * acc);
-}
-```
 
 ## ✅ Use cases
 
@@ -29,6 +26,21 @@ function factorial(n, acc = 1) {
 - Divide and conquer algorithms: quick sort, merge sort, ...
 - Dynamic programming: knapsack problem and certain graph algorithms, ...
 
-### 📍 NOTEs
+### 👾 Practices
+
+[Beginner Recursion](./warm-up.js)
+
+- [sum](./sum.js)
+- [factorial](./factorial.js)
+- [sum of length](./sum-of-length.js)
+- [reverse string](./reverse-string.js)
+- [palindrome](./palindrome.js)
+- [fibonacci](./fibonacci.js)
+
+Exaustive Recursion
+
+- [subsets](./exhaustive/subsets.js)
+
+#### 📍 NOTEs
 
 - `n` in time and space is the number of elements.
