@@ -2,7 +2,7 @@
 
 ## Definition
 
-A technique in programming where a function calls itself in order to solve a problem (can be divided into smaller).
+A technique in programming where a function calls itself in order to solve a problem (can be **divided into smaller**).
 
 - Base case: stops calling itself, preventing an infinite loop.
 - Recursive case: calls itself with a modified argument, moving towards the base case.
@@ -39,7 +39,8 @@ The recursion call is the last operation in the function
 
 Exaustive Recursion
 
-- [subsets](./exhaustive/subsets.js)
+- [subsets](./exhaustive/subsets.js) - 2^n
+- [permutations](./exhaustive/permutations.js) - n!
 
 #### 📍 NOTEs
 
