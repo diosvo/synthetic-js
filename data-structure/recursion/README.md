@@ -43,6 +43,7 @@ Exaustive Recursion
   - For each item we decide whether to include or exclude it. There are 2 choices for each of the `n` items, so we have 2 \* 2 \* ... \* 2 (n times)
 - [permutations](./exhaustive/permutations.js) - `n!`
   - For each position we decide which item to place there, and we have `n` choices for the first position, `n-1` for the second, and so on..
+- [create-combinations](./exhaustive/create-combinations.js) - `(n! / (k! * (n-k)!))`
 
 → The main difference is: Subsets are unordered, but Permutations are ordered.
 
