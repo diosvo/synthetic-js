@@ -51,3 +51,4 @@ Exhaustive Recursion
 - [create-combinations](./exhaustive/create-combinations.js) - `(n! / (k! * (n-k)!))`
 - [grocery-budget](./exhaustive/grocery-budget.js) (_subsets_) - `2^n`
 - [lining-up](./exhaustive/lining-up.js) (_permutations_) - `n! / (n-k)!`
+- [possible-paths](./exhaustive/possible-paths.js)
