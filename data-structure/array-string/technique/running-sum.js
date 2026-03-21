@@ -1,9 +1,4 @@
 /**
- * @description Use Prefix Sum technique.
- * @example i-th result should be the sum of all elements 0 to i:
- *
- * ```result[i] = numbers[0] + numbers[1] + numbers[2] + ... + numbers[i]```
- *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  */
 const runningSum = (numbers) => {

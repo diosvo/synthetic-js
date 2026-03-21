@@ -12,12 +12,11 @@
 
 ## Patterns / Problem Solving Techniques
 
-1. Prefix Sum
+1. [Prefix](../../techniques/prefix.md)
 
 2. [Two pointers](../../techniques/two-pointers/two-pointers.md)
 
 3. Hash-map (_Improve the efficiency_)
-
    - [Has Subarray Sum](./technique/has-subarray-sum.js) w/ Prefix Sum and Hash map ✔️
    - [Sub Array Sum Count](./technique/subarray-sum-count.js)
 
