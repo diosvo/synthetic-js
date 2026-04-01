@@ -32,6 +32,7 @@ Recursive with the index:
 
 1. [couting change](./counting-change.js)
 2. [array stepper](./array-stepper.js)
+3. [max increasing subsequence](./max-increasing-subseq.js)
 
 ### Two-dimensional
 
