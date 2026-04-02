@@ -19,7 +19,7 @@ Every node, values in the left subtree are less than the node and values in the 
 
 ❓ Define what "height" is → The distance of the root to the farthest leaf.
 
-→ Worst case: O(n). The tree degenerates into a linked-list shape.
+→ Worst case: O(n). The nodes form a long 'linked-list' chain.
 
 ❓ Define what "balance" is → For every node, the height between left and right subtree differs by at most 1.
 
@@ -99,8 +99,9 @@ Can be implemented with both strategies.
 - [tree includes](./tree-includes.js)
 - [tree min value](./tree-min-value.js)
 - [tree value count](./tree-value-count.js)
-- [how height](./how-height.js)
+- [how high](./how-high.js)
 - [tree levels](./tree-levels.js)
+- [leaf layers](./leaf-layers.js)
 
 ### Recursion
 

@@ -1,6 +1,6 @@
 /** 🔄 Recursive
  *
- * @description The height is defined as the maximal number of edges from the root node to any leaf node.
+ * @description he maximal number of edges from the root node to any leaf node.
  *
  * ⏱️ Time: O(n) - 🚀 Space: O(n)
  *
@@ -39,3 +39,4 @@ function howHigh(root) {
 
 howHigh(a); // -> 2
 howHigh(null); // -> -1
+howHigh(new Node('b')); // -> 0
