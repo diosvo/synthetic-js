@@ -114,6 +114,7 @@ Can be implemented with both strategies.
 - [build tree in post](./build-tree-in-post.js)
 - [build tree in pre](./build-tree-in-pre.js)
 - [is tree balanced](./is-tree-balanced.js)
+- [has path sum](./has-path-sum.js)
 
 ### 📍 NOTEs
 
