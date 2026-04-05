@@ -84,6 +84,7 @@ let fn = (arr1, arr2) => {
 - [Polidrome](./palindrome.js)
 - [Uncompress](./uncompress.js)
 - [Compress](./compress.js)
+- [token replace](./token-replace.js)
 
 #### LeetCode
 
