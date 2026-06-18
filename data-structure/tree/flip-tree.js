@@ -17,6 +17,26 @@ const flipTree = (root) => {
   return root;
 };
 
+function flipTree(root) {
+  if (!root) return null;
+
+  const queue = [root];
+
+  while (queue.length) {
+    const current = queue.shift();
+
+    if (current) {
+      // Swap left and right children
+      [current.left, current.right] = [current.right, current.left];
+
+      if (current.left) queue.push(current.left);
+      if (current.right) queue.push(current.right);
+    }
+  }
+
+  return root;
+}
+
 // Refer Node from example.js in this folder
 const a = new Node('a');
 const b = new Node('b');
