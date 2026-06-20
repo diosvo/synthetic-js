@@ -23,6 +23,10 @@ Every node, values in the left subtree are less than the node and values in the 
 
 ❓ Define what "balance" is → For every node, the height between left and right subtree differs by at most 1.
 
+## 🎮 Usage
+
+Optimize searching, data sorting, memory management, and hierarchical data rendering.
+
 # 🎯 Strategies
 
 ## [Depth First Values](./0-depth-first-values.js) (Stack - LIFO)
